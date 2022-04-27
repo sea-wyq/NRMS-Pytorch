@@ -205,10 +205,3 @@ def getHistorySampleByAfter(history, his_max_length):
     return history
 
 
-if __name__ == '__main__':
-    config = Config()
-    # getUserDict(config)
-    # cate2idx, len_cate, subcate2idx, len_subcate, news_dict = getCategoryAndNewsDict(config)
-    getWordDictByGlove(config)
-    # train = getMindDataset(config, "train", glove_id, 4)
-    # val = getMindDataset(config, "dev", news_dict, glove_id)
