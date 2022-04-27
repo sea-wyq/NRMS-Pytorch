@@ -86,7 +86,7 @@ class NRMS(nn.Module):
         super().__init__()
         self.glove_embdding = nn.Embedding.from_pretrained(torch.as_tensor(glove_dict, dtype=torch.float32))
         for p in self.parameters():
-            p.requires_grad = False  # 让embdding参数停止更新
+            p.requires_grad = False
         self.user_encoder = UserEncoder(config)
 
     def forward(self, his_tit, imp_tit):
